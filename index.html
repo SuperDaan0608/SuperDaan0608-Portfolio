@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -9,25 +10,31 @@
 
 <link rel="stylesheet" href="style.css">
 
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+
 </head>
+
 
 <body>
 
 
 <nav>
-    <h2>SuperDaan0608</h2>
 
-    <div>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </div>
+<h2>SuperDaan0608</h2>
+
+<div>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+
 </nav>
 
 
 
 <section class="hero">
+
 
 <div class="hero-text">
 
@@ -38,6 +45,7 @@ Roblox Developer
 <h2>
 SuperDaan0608
 </h2>
+
 
 <p>
 Creating professional Roblox experiences
@@ -53,14 +61,31 @@ View Projects
 </div>
 
 
-<div class="cube">
 
-<div></div>
+<div class="model">
+
+
+<model-viewer
+
+src="models/avatar.glb"
+
+camera-controls
+
+auto-rotate
+
+shadow-intensity="1"
+
+exposure="1">
+
+</model-viewer>
+
 
 </div>
 
 
+
 </section>
+
 
 
 
@@ -72,10 +97,11 @@ View Projects
 <p>
 Hello! I'm Daan, also known as SuperDaan0608.
 I specialize in Roblox development and creating
-custom systems for games.
+custom systems using Luau.
 </p>
 
 </section>
+
 
 
 
@@ -91,19 +117,19 @@ custom systems for games.
 
 <div>
 <h3>Luau</h3>
-<p>Advanced Roblox scripting</p>
+<p>Roblox scripting and gameplay systems</p>
 </div>
 
 
 <div>
-<h3>UI Design</h3>
-<p>Modern interfaces and animations</p>
+<h3>UI Development</h3>
+<p>Modern animated interfaces</p>
 </div>
 
 
 <div>
-<h3>Systems</h3>
-<p>DataStores, shops and gameplay systems</p>
+<h3>Data Systems</h3>
+<p>Saving, shops and progression</p>
 </div>
 
 
@@ -115,7 +141,9 @@ custom systems for games.
 
 </div>
 
+
 </section>
+
 
 
 
@@ -125,32 +153,34 @@ custom systems for games.
 
 <section id="projects" class="hidden">
 
+
 <h2>Projects</h2>
 
 
 <div class="cards">
 
 
-<div class="project">
+
+<div class="project" onclick="openProject('Military System')">
 
 <h3>Military System</h3>
 
 <p>
-Team management, checkpoints,
-security systems and admin tools.
+Click to view details
 </p>
 
 </div>
 
 
 
-<div class="project">
+
+
+<div class="project" onclick="openProject('Simulator Framework')">
 
 <h3>Simulator Framework</h3>
 
 <p>
-Coins, upgrades, shops,
-leaderboards and saving.
+Click to view details
 </p>
 
 </div>
@@ -158,22 +188,50 @@ leaderboards and saving.
 
 
 
-<div class="project">
+
+<div class="project" onclick="openProject('UI System')">
 
 <h3>Advanced UI System</h3>
 
 <p>
-Animated menus,
-notifications and interfaces.
+Click to view details
 </p>
 
 </div>
+
 
 
 </div>
 
 
 </section>
+
+
+
+
+
+
+<div id="popup">
+
+
+<div class="popup-box">
+
+
+<h2 id="popup-title"></h2>
+
+<p id="popup-text"></p>
+
+
+<button onclick="closeProject()">
+Close
+</button>
+
+
+</div>
+
+
+</div>
+
 
 
 
@@ -185,6 +243,7 @@ notifications and interfaces.
 
 <h2>Contact</h2>
 
+
 <p>
 Roblox:
 <br>
@@ -192,7 +251,23 @@ Roblox:
 </p>
 
 
+<p>
+Discord:
+<br>
+<b>superdaan0608</b>
+</p>
+
+
+<p>
+Business Email:
+<br>
+<b>superdaan0608@gmail.com</b>
+</p>
+
+
 </section>
+
+
 
 
 
@@ -208,4 +283,5 @@ Roblox:
 
 
 </body>
+
 </html>
