@@ -36,14 +36,14 @@ const PROJECTS = [
         name: "Coffee machine system",
         tag: "System",
         description: `
-            A complete Roblox military framework.
+            A complete coffee machine system.
             <br><br>
             Features:
-            <br>• Team systems
-            <br>• Rank management
-            <br>• Security systems
-            <br>• Administration tools
-            <br>• Training features
+            <br>• Animations
+            <br>• Custom proximity prompt
+            <br>• Animations
+            <br>• Detailed system
+            <br>• Clear code
         `
     },
     {
