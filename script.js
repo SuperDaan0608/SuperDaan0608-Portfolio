@@ -31,7 +31,7 @@ revealElements.forEach(element => revealObserver.observe(element));
 // =====================================================
 const PROJECTS = [
     {
-        image: "military.png",
+        image: "Schermafbeelding 2026-07-12 114113.png",
         youtube: "https://youtu.be/vNFyToty2jk",
         name: "Coffee machine system",
         tag: "System",
