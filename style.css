@@ -243,16 +243,25 @@ button{
 ===================================================== */
 
 .hero{
-    min-height:100vh;
+    min-height:90vh;
     display:flex;
     align-items:center;
-    justify-content:space-between;
-    gap:60px;
+    justify-content:center;
+    text-align:center;
     padding:150px 8% 60px;
 }
 
 .hero-content{
-    max-width:600px;
+    max-width:680px;
+}
+
+.hero .description{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.hero .buttons{
+    justify-content:center;
 }
 
 .badge{
@@ -324,36 +333,6 @@ button{
     gap:16px;
     flex-wrap:wrap;
 }
-
-
-/* ---- hero art ---- */
-
-.hero-art{
-    flex-shrink:0;
-}
-
-.art-card{
-    width:340px;
-    height:340px;
-    border-radius:var(--radius-lg);
-    background:linear-gradient(160deg, var(--peach), var(--lavender));
-    border:1px solid var(--border);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    box-shadow:0 30px 60px rgba(255,143,163,.25);
-    animation:float 5s ease-in-out infinite;
-}
-
-.art-emoji{
-    font-size:120px;
-}
-
-@keyframes float{
-    0%,100%{ transform:translateY(0); }
-    50%{ transform:translateY(-16px); }
-}
-
 
 
 /* =====================================================
@@ -646,6 +625,29 @@ button{
     margin-bottom:14px;
 }
 
+.popup-video{
+    position:relative;
+    width:100%;
+    padding-top:56.25%; /* 16:9 */
+    border-radius:var(--radius-sm);
+    overflow:hidden;
+    margin-bottom:18px;
+    background:var(--bg);
+    display:none;
+}
+
+.popup-video.active{
+    display:block;
+}
+
+.popup-video iframe{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    border:0;
+}
+
 #popup-description{
     color:var(--text-dim);
     line-height:1.9;
@@ -745,15 +747,9 @@ footer{
 
 @media(max-width:1000px){
     .hero{
-        flex-direction:column-reverse;
-        text-align:center;
         padding-top:130px;
     }
     .hero-content{ max-width:100%; }
-    .description{ margin-left:auto; margin-right:auto; }
-    .buttons{ justify-content:center; }
-    .art-card{ width:260px; height:260px; }
-    .art-emoji{ font-size:90px; }
     .stats{ grid-template-columns:1fr; margin-bottom:70px; }
     .about-grid{ grid-template-columns:1fr; }
     .links{ display:none; }
