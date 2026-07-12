@@ -32,7 +32,7 @@ revealElements.forEach(element => revealObserver.observe(element));
 const PROJECTS = [
     {
         image: "Schermafbeelding 2026-07-12 114113.png",
-        youtube: "https://youtu.be/vNFyToty2jk",
+        youtube: "https://www.youtube.com/watch?v=vNFyToty2jk",
         name: "Coffee Machine",
         tag: "System",
         description: `
