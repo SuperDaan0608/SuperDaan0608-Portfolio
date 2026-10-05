@@ -62,7 +62,22 @@ const PROJECTS = [
             <br>• Patients timer
         `
     },
-    
+    {
+        image: "Schermafbeelding 2026-10-05 091650.png",
+        youtube: "https://youtu.be/Xqfv3TB-X30",
+        name: "Private Meeting Room System",
+        tag: "system",
+        description: `
+            A fully functional Private Meeting Room System
+            <br><br>
+            Features:
+            <br>• Codes
+            <br>• Good Template
+            <br>• Easy to use
+            <br>• Clear code
+            <br>• Easy settings
+        `
+    },
 ];
 
 // ================= BUILD PROJECT CARDS =================
