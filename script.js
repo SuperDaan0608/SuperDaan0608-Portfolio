@@ -63,7 +63,7 @@ const PROJECTS = [
         `
     },
     {
-        image: "Schermafbeelding 2026-10-05 091650.png",
+        image: "Schermafbeelding 2026-10-05 091657.png",
         youtube: "https://youtu.be/Xqfv3TB-X30",
         name: "Private Meeting Room System",
         tag: "system",
