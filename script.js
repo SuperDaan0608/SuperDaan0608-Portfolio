@@ -62,22 +62,7 @@ const PROJECTS = [
             <br>• Patients timer
         `
     },
-    {
-        image: "Schermafbeelding 2026-07-12 210658.png",
-        youtube: "https://youtu.be/BxerA-1viOQ",
-        name: "Advanced admin system",
-        tag: "Interface/system",
-        description: `
-            Modern Roblox admin system
-            <br><br>
-            Features:
-            <br>• Animated menus
-            <br>• Notifications
-            <br>• Smooth transitions
-            <br>• Every command you need
-            <br>• Responsive layouts
-        `
-    }
+    
 ];
 
 // ================= BUILD PROJECT CARDS =================
